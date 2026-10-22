@@ -1,0 +1,11 @@
+{
+  "skill": "pinterest-blog-images",
+  "test_cases": [
+    {"input": "Create Pinterest pins from this blog post URL", "should_trigger": true},
+    {"input": "Generate Pinterest images for my article about home organization", "should_trigger": true},
+    {"input": "Make vertical pins from this web post for Pinterest", "should_trigger": true},
+    {"input": "Write an SEO article about productivity", "should_trigger": false},
+    {"input": "Humanize this text", "should_trigger": false},
+    {"input": "What's the weather?", "should_trigger": false}
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "skill": "pinterest-blog-images",
+  "test_cases": [
+    {
+      "name": "from_url",
+      "input": "Create Pinterest pins from this blog post: https://example.com/best-remote-work-tips",
+      "assertions": [
+        "Fetches content from the URL",
+        "Generates 3 or more portrait images using render_generated_image",
+        "Provides Pinterest titles, descriptions, and hashtags for each image",
+        "Images are vertical / portrait orientation"
+      ]
+    },
+    {
+      "name": "from_pasted_text",
+      "input": "Generate Pinterest images for this article about meal prep for beginners: [pasted 800-word post]",
+      "assertions": [
+        "Extracts key tips and hooks from the text",
+        "Creates varied image concepts (cover, tip list, lifestyle)",
+        "Delivers ready-to-use Pinterest captions"
+      ]
+    },
+    {
+      "name": "quote_and_tips_focus",
+      "input": "Make Pinterest pins from this productivity blog post. Focus on the main tips and any good quotes.",
+      "assertions": [
+        "Includes at least one quote-style pin if quotes exist",
+        "Includes tip or list-style pins",
+        "All images use portrait orientation suitable for Pinterest"
+      ]
+    }
+  ]
+}
